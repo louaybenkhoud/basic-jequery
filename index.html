@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Checkpoint</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="editor">
+      <h1>Paragraph Editor</h1>
+      <ul class="button-list">
+        <li>
+          <select name="font" id="font" onchange="changeFont(event)">
+            <option value="arial">Arial</option>
+            <option value="arial">Roboto</option>
+            <option value="Anton">Anton</option>
+          </select>
+        </li>
+        <li>
+          <select name="size" id="size" onchange="changeSize(event)">
+            <option value="12">12</option>
+            <option value="14">14</option>
+            <option value="16">16</option>
+            <option value="18">18</option>
+            <option value="20">20</option>
+            <option value="22">22</option>
+            <option value="28">28</option>
+          </select>
+        </li>
+        <li class="button" onclick="changeBold()">
+          <i class="fas fa-bold"></i>
+        </li>
+        <li class="button" onclick="changeItalic()">
+          <i class="fas fa-italic"></i>
+        </li>
+        <li class="button" onclick="changeUnderlined()">
+          <i class="fas fa-underline"></i>
+        </li>
+        <li class="button" onclick="leftMe()">
+          <i class="fas fa-align-left"></i>
+        </li>
+        <li class="button" onclick="centerMe()">
+          <i class="fas fa-align-center"></i>
+        </li>
+        <li class="button" onclick="rightMe()">
+          <i class="fas fa-align-right"></i>
+        </li>
+      </ul>
+      <textarea
+        name="text"
+        id="text"
+        rows="15"
+        cols="180"
+        oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'
+      ></textarea>
+    </div>
+
+    <script src="./jquery/jquery-3.3.1.min.js"></script>
+    <script src="./jquery/jquery.js"></script>
+  </body>
+</html>

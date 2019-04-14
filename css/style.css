@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css?family=Anton|Roboto");
+
+body {
+  margin: 0;
+  background-color: azure;
+}
+.editor {
+  width: 80%;
+  position: relative;
+  top: 20vh;
+  margin: auto;
+  background: white;
+  box-sizing: border-box;
+  padding: 20px;
+}
+ul {
+  list-style-type: none;
+}
+.button-list {
+  padding: 0 10px;
+  display: flex;
+}
+.button {
+  display: inline-block;
+  padding: 8px;
+  margin: 0 2px;
+  background: #fefefe;
+}
+select {
+  display: inline-block;
+  margin: 0 2px;
+  padding: 8px;
+}
+textarea {
+  max-width: 70vw;
+  max-height: 30vh;
+  overflow: auto;
+  font-weight: "";
+}
+
